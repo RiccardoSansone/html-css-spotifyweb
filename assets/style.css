@@ -149,7 +149,13 @@
     font-weight: lighter;
     color: rgb(148, 147, 147);
 }
-
+.content-main h1{
+    color: white;
+    font-weight: 600;
+}
+.content-main p{
+    color: gray;
+}
 /* hover */
 
 .menu-item:hover{
