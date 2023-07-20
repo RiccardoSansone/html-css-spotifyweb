@@ -91,7 +91,21 @@
 .overlay{
     display: none;
 }
-
+.padding-gen-05{
+    padding: 0.5rem;
+}
+.color-white{
+    color: gray;
+}
+.gap-05{
+    gap: 0.5rem;
+}
+.padding-top-05{
+    padding-top: 0.5rem;
+}
+.padding-top-1{
+    padding-top: 1rem;
+}
 /* #endregion utility */
 
 
@@ -113,12 +127,50 @@
     height: 100%;
     margin: auto;
 }
+.sidebar-item{
+    width: 100%; 
+    aspect-ratio: 1; 
+    display: flex;
+    flex-direction: column;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-center{
+    justify-content: flex-center;
+}
+.flex-end{
+    justify-content: flex-end;
+}
 .img-container{
     display: flex;
 }
 .img-item{
-    width: 50%;
+    width: 100%;
     padding: 0.2rem;
+}
+.logo{
+    width: 100px;
+}
+#logo-sm{
+    display: none;
+    width: 30px;
+}
+.font-size-sm{
+    font-size: small;
+}
+.font-size-md{
+    font-size: medium;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.hr{
+    color: gray; 
+    width: 100%; 
+}
+.padding-bottom-1{
+    padding-bottom: 1rem;
 }
 /* #endregion sidebar */
 
@@ -218,6 +270,22 @@
         z-index: 1;
     }
 }
+
+.nav-menu:hover{
+
+    .color-white{
+        color: white;
+    }
+    .nav-menu{
+        border-left: 1px solid greenyellow;
+    }
+}
+.playlist:hover{
+
+    .color-white{
+        color: white;
+    }
+}
 /* /hover */
 
 
@@ -277,8 +345,20 @@
     .content-main{
         width: calc(100% - 50px);
     }
+    #logo-sm{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
     .btn{
         display: none;
+    }
+    #none{
+        display: none;
+    }
+    #icon{
+        font-size: x-large;
     }
 }
 /* /media 600px */
