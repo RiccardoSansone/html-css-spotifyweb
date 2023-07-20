@@ -15,14 +15,17 @@
 
     <!-- sidebar -->
     <section class="sidebar">
-        <div class="column">
+        <div class="container-sidebar justify-between">
+            <div style="width: 100%; aspect-ratio: 1; border: 1px dashed white;"></div>
+            <div style="width: 100%; aspect-ratio: 1; border: 1px dashed white;"></div>
         </div>
     </section>
     <!-- /sidebar -->
 
 
-        <!-- topbar -->
+        <!-- content-main -->
     <section class="content-main">
+        <!-- topbar -->
         <div class="top-bar">
             <a class="btn text-center" href="#">EFFETTUA L'UPGRADE</a>
         </div>
@@ -51,7 +54,11 @@
             <div class="row wrap">
                 <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
-                        <img class="img" src="./assets/img/metal_lifting.jpg" alt="">
+                        <div class="position-relative">
+                            <img class="img" src="./assets/img/metal_lifting.jpg" alt="">
+                            <div class="overlay"></div>
+                            <p class="play-icon"><i class="fa-regular fa-circle-play fa-2x "></i></p>
+                        </div>
                         <h3 class="text-center">Heavy Metal</h3>
                         <h5 class="text-center">Subtitle</h5>
                     </div>
@@ -102,13 +109,13 @@
                 <p>più ascolti più assicurati saranno i suggerimenti.</p>
             </div>         
             <div class="row ">
-                <div class="col-2">
+                <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
                         <img class="img" src="./assets/img/radar.jpeg" alt="">
                         <h3 class="text-center">Release Radar</h3>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
                         <img class="img" src="./assets/img/mixdaily.jpeg" alt="">
                         <h3 class="text-center">Daily Mix 1</h3>
@@ -125,14 +132,14 @@
                 <p>più ascolti più assicurati saranno i suggerimenti.</p>
             </div>
             <div class="row wrap">
-                <div class="col-2">
+                <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
                         <img class="img-circle" src="./assets/img/youg.jpeg" alt="">
                         <h3 class="text-center">Heavy Metal</h3>
                         <h5 class="text-center">Subtitle</h5>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
                         <img class="img-circle" src="./assets/img/einaudi.jpeg" alt="">
                         <h3 class="text-center">Heavy Metal</h3>
@@ -144,9 +151,12 @@
 
         </div>
     </section>
+        <!-- /content main -->
+        
 
+        <!-- footer -->
     <section class="footer">
     </section>
-
+        <!-- /footer -->
 </body>
 </html>
