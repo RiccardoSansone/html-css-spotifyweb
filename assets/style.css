@@ -85,7 +85,7 @@
 /* #region sidebar */
 .sidebar{
     width: 200px;
-    height: calc(100vh - 100px);
+    height: calc(100% - 80px);
     background-color: var(--sp-dark-side-bar);
     position: fixed;
     left: 0;
@@ -101,7 +101,7 @@
 /* #region main-content */
 .content-main{
     background-color: var(--sp-light-gray);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: calc(100% - 200px);
     position: absolute;
     right: 0;
@@ -127,10 +127,11 @@
     padding: 0.5rem 2rem;
     font-size: small;
     font-weight: lighter;
+    transition: 0.2s;
 }
 
 .main-container{
-    width: 90%;
+    width: 98%;
     margin: auto;
     padding-top: 1rem;
 }
@@ -140,6 +141,7 @@
     font-size: x-small;
     color: gray;
     padding-bottom: 0.1rem;
+    transition: 0.2s;
 }
 .card h3, .card h5{
     color: white;
@@ -176,7 +178,7 @@
 
 /* #region footer */
 .footer{
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -189,12 +191,16 @@
 
 
 
+/* Desktop first */
+
 /* #region mediaquerys */
 
 
 @media screen and (max-width:1100px) 
 {
-    
+  .col-md-3{
+    width: calc(100% / 12 * 3);
+  }  
 }
 /* /media 1100px */
 
@@ -202,14 +208,28 @@
 
 @media screen and (max-width:700px) 
 {
-    
+    .col-sm-6{
+        width: calc(100% / 12 * 6);
+    }      
 }
 /* /media 700px */
 
 
 @media screen and (max-width:600px) 
 {
+    .col-sm-6{
+        width: calc(100% / 12 * 6);
+    }
     
+    .sidebar{
+        width: 50px;
+    }
+    .content-main{
+        width: calc(100% - 50px);
+    }
+    .btn{
+        display: none;
+    }
 }
 /* /media 600px */
 
