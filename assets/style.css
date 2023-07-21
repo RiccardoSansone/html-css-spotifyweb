@@ -330,6 +330,32 @@
     width: 50px;
     aspect-ratio: 1;
 }
+.minutes{
+    width: 70%;
+    height: 5px;
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+}
+.minute{
+    width: 30%;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+.volume{
+    width: 40%;
+    height: 5px;
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+}
+.vol{
+    width: 30%;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
 /* #endregion footer */
 
 
