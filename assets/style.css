@@ -342,6 +342,7 @@
     height: 5px;
     background-color: white;
     border-radius: 20px;
+    justify-content: flex-end;
 }
 .volume{
     width: 40%;
@@ -355,6 +356,14 @@
     height: 5px;
     background-color: white;
     border-radius: 20px;
+    justify-content: flex-end;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    align-self: center;
 }
 /* #endregion footer */
 
