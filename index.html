@@ -14,9 +14,9 @@
 
 
     <!-- sidebar -->
-    <section class="sidebar padding-gen-05">
-        <div class="container-sidebar justify-between">
-            <div class="sidebar-item flex-start">
+    <section class="sidebar padding-gen-1">
+        <div class="container-sidebar">
+            <div class="sidebar-item flex-start sidebar-top">
                 <div class="img-container">
                     <div class="img-item">
                         <img class="logo" src="./assets/img/logo.svg" alt="">
@@ -24,47 +24,50 @@
                     </div>
                 </div>
                 <div class="menu-sidebar">
-                    <div class="nav-menu row gap-05 padding-top-05">
-                        <img style="width: 20px; filter: opacity(50%)" src="./assets/img/home.svg" alt="">
-                        <span id="none" class="color-white font-size-sm align-self-center">Home</span>
+                    <div class="row">
+                        <div id="greenline-left" ></div>
+                        <div id="home-icon" class="nav-menu row gap-05 padding-top-05">
+                            <img class="icon-img" src="./assets/img/home.svg" alt="">
+                            <span id="none" class="color-white font-size-sm align-self-center">Home</span>
+                        </div>
                     </div>
                     <div class="nav-menu row gap-05 padding-top-05">
-                        <img style="width: 20px; filter: opacity(50%);" src="./assets/img/search.svg" alt="">
+                        <img class="icon-img" src="./assets/img/search.svg" alt="">
                         <span id="none" class="color-white font-size-sm align-self-center">Cerca</span>
                     </div>
                     <div class="nav-menu row gap-05 padding-top-05">
-                        <img style="width: 20px; filter: opacity(50%);" src="./assets/img/libreria.svg" alt="">
+                        <img class="icon-img" src="./assets/img/libreria.svg" alt="">
                         <span id="none" class="color-white font-size-sm align-self-center">La tua libreria</span>
                     </div>
                 </div>
-                <h4 id="none" style="color: white;padding-top: 1rem;">Playlist</h4>
-                <div id="none" class="menu-sidebar">
-                    <div class="nav-menu row gap-05 padding-top-05" >
-                        <div class="add">
-                            <i id="icon" class="fa-solid fa-plus" ></i>
-                        </div>
-                        <span id="none" class="color-white align-self-center">Crea Playlist</span>
+            </div>
+            <h4 id="none" class="sidebar-title">Playlist</h4>
+            <div id="none" class="menu-sidebar sidebar-middle">
+                <div class="nav-menu row gap-05 padding-top-05" >
+                    <div class="add">
+                        <i id="icon" class="fa-solid fa-plus" ></i>
                     </div>
-                    <div class=" column gap-05 padding-top-05" style="overflow: auto; height: 60%;">
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                        <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
-                    </div>
+                    <span id="none" class="color-white align-self-center">Crea Playlist</span>
+                </div>
+                <div class=" column gap-05 padding-top-05" style="overflow: auto; height: 60%;">
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
+                    <div class="playlist"><span id="none" class="color-white font-size-sm">Nome Playlist</span></div>
                 </div>
             </div>
 
 
-            <div class="sidebar-item flex-end">               
+            <div class="sidebar-item flex-end sidebar-bottom">               
                 <div class="nav-menu row gap-05 padding-top-1">
                     <img id="download" style="width: 15px;padding-bottom: 0.9rem; filter: opacity(50%);" src="./assets/img/download.svg" alt="">
                     <span id="none" class="padding-bottom-1 color-white font-size-sm">Installa app</span>
                 </div>
                 <hr id="none" class="hr">
-                <div class="nav-menu row gap-05 padding-top-1">
+                <div class="nav-menu row gap-05">
                     <div style="background-color: gray; width: 30px; height: 30px; border-radius: 50%;">
                         <img id="profile" class="img-circle" src="./assets/img/profile.svg" alt="">
                     </div>
@@ -75,20 +78,25 @@
     </section>
     <!-- /sidebar -->
 
-
-        <!-- content-main -->
-    <section class="content-main">
+    <section class="top-bar-header">
         <!-- topbar -->
         <div class="top-bar">
             <a class="btn text-center" href="#">EFFETTUA L'UPGRADE</a>
         </div>
         <!-- /topbar -->
+    </section>
+
+        <!-- content-main -->
+    <section class="content-main">
 
 
         <div class="main-container">
             <!-- menu -->
             <div class="row wrap justify-center gap-2">
-                <a class="menu-item" href="#">IN EVIDENZA</a>
+                <div class="column">
+                    <a id="evidence" class="menu-item" href="#">IN EVIDENZA</a>
+                    <div class="greenline"></div>
+                </div>
                 <a class="menu-item" href="#">PODCAST</a>
                 <a class="menu-item" href="#">CLASSIFICHE</a>
                 <a class="menu-item" href="#">GENERI E MOOD</a>
@@ -216,15 +224,13 @@
                 <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
                         <img class="img-circle" src="./assets/img/youg.jpeg" alt="">
-                        <h3 class="text-center">Heavy Metal</h3>
-                        <h5 class="text-center">Subtitle</h5>
+                        <h3 class="text-center">Lana Del Rey</h3>
                     </div>
                 </div>
                 <div class="col-2 col-md-3 col-sm-6">
                     <div class="card column gap-02">
                         <img class="img-circle" src="./assets/img/einaudi.jpeg" alt="">
-                        <h3 class="text-center">Heavy Metal</h3>
-                        <h5 class="text-center">Subtitle</h5>
+                        <h3 class="text-center">Ludovico Einaudi</h3>
                     </div>
                 </div>
             </div>
@@ -237,61 +243,59 @@
 
         <!-- footer -->
     <section class="footer">
-        <div class="footer-container">
-            <div class="row justify-between">
+        <div class="row footer-container">
 
-                <!-- left -->
-                <div class="footer-item row gap-1">
-                    <div class="foot-img">
-                        <img class="img" src="./assets/img/sinister.jpeg" alt="">
-                    </div>
-                    <div class="title-foot column justify-center">
-                        <h4>Sinister</h4>
-                        <p>Brano Nome</p>
-                    </div>
-                    <div class="icon-foot row colmun-md gap-05 align-center">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-regular fa-folder"></i>
-                    </div>
+            <!-- left -->
+            <div class="footer-left row gap-1">
+                <div class="foot-img">
+                    <img class="img" src="./assets/img/sinister.jpeg" alt="">
                 </div>
-                <!-- /left -->
-
-                <!-- center -->
-                <div class="footer-item">
-                     <div class="column gap-1">
-                        <div class="row justify-center gap-1">
-                            <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-backward-step"></i>
-                            <i class="fa-regular fa-circle-play"></i>
-                            <i class="fa-solid fa-forward-step"></i>
-                            <i class="fa-solid fa-arrow-rotate-right"></i>
-                        </div>
-                        <div class="row justify-between align-center">
-                            <span>0:25</span>
-                            <div class="minutes">
-                                <div class="minute row">
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <span>4:35</span>
-                        </div>
-                     </div>
+                <div class="title-foot column justify-center">
+                    <h4>Sinister</h4>
+                    <p>Brano Nome</p>
                 </div>
-                <!-- /center -->
-
-                <!-- right -->
-                <div class="footer-item row justify-between flex-end align-center gap-1">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <div class="volume">
-                        <div class="vol row">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
+                <div class="icon-foot row column-md gap-05 align-center">
+                    <i class="icon-foot-color fa-regular fa-heart"></i>
+                    <i class="icon-foot-color fa-regular fa-folder"></i>
                 </div>
-                <!-- /right -->
             </div>
+            <!-- /left -->
+
+            <!-- center -->
+            <div class="footer-item-center">
+                    <div class="column gap-05">
+                    <div id="settings" class="row justify-center gap-1">
+                        <i class="fa-solid fa-shuffle align-self-center"></i>
+                        <i class="fa-solid fa-backward-step align-self-center"></i>
+                        <span class="align-self-center" id="circle-play"><i class="fa-regular fa-3x fa-circle-play"></i></span>
+                        <i class="fa-solid fa-forward-step align-self-center"></i>
+                        <i class="fa-solid fa-arrow-rotate-right align-self-center"></i>
+                    </div>
+                    <div class="row justify-between align-center">
+                        <span>0:25</span>
+                        <div class="minutes">
+                            <div class="minute row">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <span>4:35</span>
+                    </div>
+                    </div>
+            </div>
+            <!-- /center -->
+
+            <!-- right -->
+            <div id="function" class="footer-right row justify-between flex-end align-center gap-1">
+                <i class="fa-solid fa-2xs fa-list"></i>
+                <i class="fa-solid fa-2xs fa-display"></i>
+                <i class="fa-solid fa-2xs fa-volume-high"></i>
+                <div class="volume">
+                    <div class="vol row">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /right -->
         </div>
     </section>
         <!-- /footer -->
